@@ -1,0 +1,92 @@
+abc@6cd054744391:~/workspace$  cd my_project
+abc@6cd054744391:~/workspace/my_project$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (my_project) 
+version: (1.0.0) 
+description: 
+entry point: (index.js) clear
+test command: 
+git repository: 
+keywords: 
+author: 
+license: (ISC) 
+About to write to /config/workspace/my_project/package.json:
+
+{
+  "name": "my_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "clear",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) 
+abc@6cd054744391:~/workspace/my_project$ 
+abc@6cd054744391:~/workspace/my_project$ 
+abc@6cd054744391:~/workspace/my_project$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (my_project) 
+version: (1.0.0) 1.0.1
+description: This is my project  Descrption 
+entry point: (index.js) index.js
+test command: npm run test 
+git repository: 
+keywords: Anang  Raj bind 
+author: AnandRaj Bind
+license: (ISC) 
+About to write to /config/workspace/my_project/package.json:
+
+{
+  "name": "my_project",
+  "version": "1.0.1",
+  "description": "This is my project  Description ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test "
+  },
+  "keywords": [
+    "Anang",
+    "Raj",
+    "bind"
+  ],
+  "author": "AnandRaj Bind",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) 
+abc@6cd054744391:~/workspace/my_project$ npm install react --save
+
+added 3 packages, and audited 4 packages in 677ms
+
+found 0 vulnerabilities
+abc@6cd054744391:~/workspace/my_project$ npm install react-script  --save-dev
+
+added 1 package, and audited 5 packages in 2s
+
+found 0 vulnerabilities
+abc@6cd054744391:~/workspace/my_project$ ^C
+abc@6cd054744391:~/workspace/my_project$ 
