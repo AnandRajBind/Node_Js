@@ -1,0 +1,185 @@
+abc@81ecde871751:~/workspace$  npm -v
+8.19.2
+abc@81ecde871751:~/workspace$ mkdir my-react-app
+abc@81ecde871751:~/workspace$ npm init react-app my-react-app
+Need to install the following packages:
+  create-react-app@5.0.1
+Ok to proceed? (y) 
+npm WARN deprecated tar@2.2.2: This version of tar is no longer supported, and will not receive security updates. Please upgrade asap.
+
+Creating a new React app in /config/workspace/my-react-app.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+added 1455 packages in 1m
+
+241 packages are looking for funding
+  run `npm fund` for details
+
+Installing template dependencies using npm...
+
+added 69 packages, and changed 1 package in 12s
+
+245 packages are looking for funding
+  run `npm fund` for details
+Removing template package using npm...
+
+
+removed 1 package, and audited 1524 packages in 3s
+
+245 packages are looking for funding
+  run `npm fund` for details
+
+6 high severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+Success! Created my-react-app at /config/workspace/my-react-app
+Inside that directory, you can run several commands:
+
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd my-react-app
+  npm start
+
+Happy hacking!
+abc@81ecde871751:~/workspace$ npm init esm my-esm-lib --yes
+Wrote to /config/workspace/package.json:
+
+{
+  "name": "lab-mongodb-nodejs",
+  "version": "1.0.0",
+  "description": "Instructions: To install dependencies - npm install To run the code in live reload mode, use command - npm run dev To run the app - npm start",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwskills/lab-mongodb-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pwskills/lab-mongodb-nodejs/issues"
+  },
+  "homepage": "https://github.com/pwskills/lab-mongodb-nodejs#readme"
+}
+
+
+abc@81ecde871751:~/workspace$ mkdir my-esm-lib
+abc@81ecde871751:~/workspace$ npm init esm my-esm-lib --yes
+Wrote to /config/workspace/package.json:
+
+{
+  "name": "lab-mongodb-nodejs",
+  "version": "1.0.0",
+  "description": "Instructions: To install dependencies - npm install To run the code in live reload mode, use command - npm run dev To run the app - npm start",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwskills/lab-mongodb-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pwskills/lab-mongodb-nodejs/issues"
+  },
+  "homepage": "https://github.com/pwskills/lab-mongodb-nodejs#readme"
+}
+
+
+abc@81ecde871751:~/workspace$ cd my-esm-lib
+abc@81ecde871751:~/workspace/my-esm-lib$ npm init esm my-esm-lib --yes
+Wrote to /config/workspace/my-esm-lib/package.json:
+
+{
+  "name": "my-esm-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+abc@81ecde871751:~/workspace/my-esm-lib$ cd                                     ../
+abc@81ecde871751:~/workspace$ mkdir projects
+abc@81ecde871751:~/workspace$ mkdir projects
+abc@81ecde871751:~/workspace$ cd projects
+abc@81ecde871751:~/workspace/projects$ npm init -yes
+Wrote to /config/workspace/projects/package.json:
+
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
+
+
+abc@81ecde871751:~/workspace/projects$ npm init -w packages/p1
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (p1) 
