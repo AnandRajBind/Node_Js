@@ -1,0 +1,14 @@
+os = require('os');
+console.log("CPU architecture: " + os.arch());
+console.log("Free memory in bytes: " + os.freemem());
+console.log("Total memory in bytes: " + os.totalmem());
+console.log("Network interfaces: "+ JSON.stringify(os.networkInterfaces()));
+console.log("OS default temp dir: "+ os.tmpdir());
+
+
+console.log("Endianess: "+ os.endianness());
+console.log("Hostname: "+os.hostname());
+
+console.log("OS type : "+os.type());
+console.log("Os Plateform : "+os.platform());
+console.log("Os release: "+ os.release());
