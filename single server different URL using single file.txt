@@ -1,0 +1,86 @@
+
+
+// Single server different url 
+const http= require('http');
+const PORT=5000;
+HOSTNAME='localhost'
+
+const server=http.createServer((req,res)=>{
+    res.statusCode=200;
+/*
+    res.setHeader('content-type', 'text/plain');
+res.end("Node server is created by Anand Raj Bind ");*/
+
+// send the json file 
+/*  res.statusCode=200;
+res.setHeader('content-type', 'application/json');
+res.end(JSON.stringify({ error: " server Error! "}));
+
+*/
+
+ //Home Page 
+    // About Page 
+    // Contact Page 
+// Product 
+// Rest... > error 
+
+
+if(req.url == '/'){
+    res.statusCode=200;
+    res.setHeader('content-type', 'text/plain');
+    res.end( " welcome to Node js Server by Anand Raj Bind ");
+    
+}
+ else if(req.url == '/about'){
+    res.statusCode=200;
+    res.setHeader('content-type', 'text/plain');
+    res.end( " About Page ");
+ } 
+ else if(req.url == '/contact'){
+    res.statusCode=200;
+    res.setHeader('content-type', 'text/plain');
+    res.end( " Contact Page ");
+ 
+}
+
+else if(req.url == '/product'){
+//******************************************** ***************************************************************************************/
+const options={
+    hostname: 'fakestoreapi.com',  // fakestoreapi.com is mock api server
+    path:'/product/1',
+    method: 'GET'
+}
+
+const apiReq=http.request(options, (apiRes)=>
+{
+apiReq.on("data", (data)=>{
+        console.log(data.toString());
+res.statusCode=200;
+res.setHeader('Content-Type', 'application/json');
+res.end( data.toString())
+
+    })
+}
+);
+
+apiReq.on("error", () => {
+    console.log(e);
+});
+apiReq.end();
+    //************************ ***********************************************************************************************/
+    res.statusCode=200;
+    res.setHeader('content-type', 'application/json');
+    res.end(JSON.stringify({ productName: " Product 1"}));
+}
+else{
+    res.statusCode=500;
+    res.setHeader('content-type', 'text/plain');
+    res.end(JSON.stringify({ error: " server error"}));
+}
+
+});
+server.listen(PORT, ()=>{
+console.log(`Server Running at ${HOSTNAME}: ${PORT}`);
+}
+)
+ 
